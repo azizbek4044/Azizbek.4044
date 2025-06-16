@@ -586,3 +586,22 @@ footer {
     padding: 8px 12px;
   }
 }
+
+.dark-mode section,
+.dark-mode .project-card,
+.dark-mode .field-card,
+.dark-mode .gallery,
+.dark-mode .blog,
+.dark-mode #about {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode .post {
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+.dark-mode .read-more {
+  background-color: #005fa3;
+}
