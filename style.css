@@ -535,3 +535,54 @@ footer {
 .dark-mode section {
   background: #1e1e1e;
 }
+/* ======= Mobil qurilmalar uchun responsiv dizayn ======= */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
+  .nav-items li a {
+    font-size: 16px;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  section, .blog, #about, .gallery, #fields, .about-container {
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+  }
+
+  .gallery-grid, .fields-container, .field-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .toggle-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  #backToTop {
+    bottom: 15px;
+    right: 15px;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
