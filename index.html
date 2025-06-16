@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Azizbekning rasmiy portfolio sayti - Hayotim, loyihalarim, qiziqishlarim va ijtimoiy tarmoqlarim haqida ma'lumotlar." />
+  <meta name="theme-color" content="#2575fc" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Azizbek | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background: #121212;
+      color: #f0f0f0;
+    }
+    header {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e0e0e0;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .dark-mode section {
+      background: #1e1e1e;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    h2 {
+      color: #6a11cb;
+      margin-bottom: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #2575fc;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .project {
+      margin-top: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #2575fc;
+    }
+    button {
+      background: #2575fc;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #1a5ed9;
+    }
+    #status {
+      margin-top: 0.5rem;
+      font-weight: 600;
+      
+    }
+    
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f0f0f0;
+      margin-top: 2rem;
+    }
+    .toggle-btn {
+      margin-top: 10px;
+      background: #ffffff33;
+      color: white;
+      border: 1px solid white;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="preloader" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#2575fc;z-index:9999;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">Yuklanmoqda...</div>
+  <header>
+<video autoplay muted loop style=max-width:150px; border-radius: 50%;  id="bgVideo">
+  <source src="images/video.mp4" type="video/mp4" />
+</video>
+</div>
+
+    <section id="hero">
+<!-- HERO SECTION -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Assalomu Aleykum! MEN </h1>
+      <section id="hero">
+    <h1><span id="typed-text"></span></h1>
+  </section>
+
+  <!-- Typed.js kutubxonasi -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Animatsiyali yozuv kodi -->
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: [
+           "Dasturchi",
+           "Frontendchi",
+           "Backendchi",
+           "Fullstack",
+           "DevOps",
+           "Dizayner",
+           "Botmaker",
+           "Algoritmchi",
+           "ONE/UI va IOS mutaxxasisi",
+          "Kompyuter mutaxxasisi",
+           "Suniy intellekt mutaxxasisi"
+          ],
+      typeSpeed: 70,
+      backSpeed: 55,
+      loop: true
+    });
+  </script>
+  </div>
+</section>  
+ <nav class="main-nav">
+  <ul class="nav-items">
+    <li><a href="index.html">Bosh sahifa</a></li>
+    <li><a href="about.html">Men haqimda</a></li>
+    <li><a href="projects.html">Loyihalar</a></li>
+    <li><a href="gallery.html">Galereya</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Aloqa</a></li>
+  </ul>
+</nav>
+
+    
+    
+    <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>Men haqimda</h2>
+    <p>Salom! Men Azizbekman, IT sohasiga qiziqaman. Portfolio sayt yaratdim va Telegram bot orqali bog‘lanishingiz mumkin.</p>
+    <ul>
+      <li>Telegram: <a href="https://t.me/azizjon_devs" target="_blank">@azizjon_devs</a></li>
+      <li>Instagram: <a href="https://instagram.com/azizjon.4044" target="_blank">@azizjon.4044</a></li>
+    </ul>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Loyihalarim</h2>
+    <div class="project">
+      <h3>Portfolio Sayti</h3>
+      <p>Shu saytning o‘zi — HTML, CSS va JavaScript yordamida yaratilgan. Github Pages orqali chiqarilgan.</p>
+    </div>
+  </section>
+
+  <section id="blog" data-aos="fade-up">
+    <h2>Blog</h2>
+    <p><a href="blog.html">Blog postlarimni o‘qish uchun shu yerni bosing →</a></p>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Aloqa</h2>
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Ismingiz" required />
+      <input type="email" id="email" name="email" placeholder="Email manzilingiz" required />
+      <textarea id="message" name="message" placeholder="Xabaringiz" rows="5" required></textarea>
+      <button type="submit">Yuborish</button>
+      <div id="status"></div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Azizbek. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    window.addEventListener("load", () => {
+      document.getElementById("preloader").style.display = "none";
+    });
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const token = "8191756269:AAGBVLa5bd4XOW_3RLA-kfE92aIUF4CcqGQ";
+      const chat_id = "487663378";
+      const text = `🧾 Yangi aloqa:\n👤 Ism: ${name}\n📧 Email: ${email}\n✉️ Xabar: ${message}`;
+
+      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: chat_id,
+          text: text,
+        }),
+      })
+        .then((res) => {
+          if (res.ok) {
+            document.getElementById("status").innerText = "Xabar yuborildi!";
+            document.getElementById("contact-form").reset();
+          } else {
+            document.getElementById("status").innerText = "Xatolik yuz berdi!";
+          }
+        })
+        .catch(() => {
+          document.getElementById("status").innerText = "Internet xatosi yoki boshqa muammo!";
+        });
+    });
+  </script>
+  <div id="sfcdm8shjqhgk3esu1mlm7zfweb9b6ybs3w"></div> 
+  <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=dm8shjqhgk3esu1mlm7zfweb9b6ybs3w&down=async" async></script>
+  <noscript><a href="https://www.freecounterstat.com" title="free counter">
+  <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=dm8shjqhgk3esu1mlm7zfweb9b6ybs3w" border="0" title="free counter" alt="free counter">
+  </a></noscript>
+  <button id="backToTop" title="Yuqoriga qaytish">⬆️</button>
+  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/contact.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+
+
+</body>
+</html>
+
+
