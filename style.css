@@ -510,3 +510,28 @@ footer {
 .nav-items li a:hover::after {
   width: 100%;
 }
+.dark-mode #typed-text {
+  color: #fff;
+}
+
+.dark-mode .nav-items li a {
+  color: #fff !important;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #f0f0f0;
+}
+.dark-mode a {
+  color: #80bfff;
+}
+.dark-mode h2 {
+  color: #ffffff;
+}
+.dark-mode button {
+  background: #333;
+  color: #fff;
+}
+.dark-mode section {
+  background: #1e1e1e;
+}
